@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Syne', sans-serif;
+}
+main{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 60%;
+      margin: auto;
+      margin-top: 30px;
+      padding: 50px 0;
+      background-color: #EADDEC;
+      border-radius: 20px;
+      & h3{
+            font-size: 30px;
+      }
+      & form{
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            & input{
+                  width: 100%;
+                  padding: 10px;
+                  outline: none;
+                  border-radius: 3px;
+                  border: none;
+                  border: solid 1px;
+            }
+            & .first{
+                  display: flex;
+                  gap: 1rem;
+            }
+            & .one, .two{
+                  display: flex;
+                  flex-direction: column;
+                  gap: .5rem;
+                  width: 100%;
+            }
+            & label{
+                  font-weight: 700;
+            }
+            & .buttons{
+                  display: flex;
+                  justify-content: space-around;
+                  margin-top: 20px;
+                  & button{
+                        padding: 10px 30px;
+                        border: none;
+                        border-radius: 5px;
+                        color: #fff;
+                        font-size: 15px;
+                        font-weight: 700;
+                        background-color: #9553A0;
+                        cursor: pointer;
+                        transition: 300ms ease;
+                  }
+                  & button:hover{
+                        background-color: #bd79c9;
+                  }
+            }
+      }
+}
